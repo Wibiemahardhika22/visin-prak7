@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="dashboard.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- 
+    <style>
+        body {
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+    </style> -->
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Dashboard</span>
+    </nav>
+    
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Penjualan Berdasarkan City dan Category</div>
+                    <div class="card-body">
+                        <div id="chart1" data-chart-type="column" data-chart-title="Penjualan Berdasarkan City dan Category"></div>
+                        <div>Boston memiliki penjualan tertinggi untuk Cookies, diikuti oleh Bars, Snacks, dan Crackers. Di Los Angeles, penjualan terbesar terjadi pada Cookies, sementara penjualan Crackers dan Snacks berada pada level yang lebih rendah. New York juga menunjukkan penjualan tertinggi untuk Cookies, namun penjualan Bars dan Snacks juga cukup signifikan. San Diego memiliki total penjualan terendah untuk semua kategori, dengan penjualan tertinggi pada Cookies. Perbedaan penjualan antar kota menunjukkan variasi dalam preferensi konsumen terhadap jenis makanan ringan tertentu di setiap wilayah.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Perbandingan Penjualan Berdasarkan Tahun</div>
+                    <div class="card-body">
+                        <div id="chart2" data-chart-type="column" data-chart-title="Perbandingan Penjualan Berdasarkan Tahun"></div>
+                        <div>Berdasarkan data penjualan total untuk tahun 2022 dan 2023, terdapat penurunan dalam jumlah penjualan. Hal ini menunjukkan adanya perubahan dalam permintaan atau faktor-faktor lain yang mempengaruhi penjualan produk tersebut. Perlu dilakukan analisis lebih lanjut untuk mengidentifikasi penyebab penurunan penjualan dan mengambil langkah-langkah yang tepat untuk mengatasi penurunan tersebut.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Total Pendapatan dari Produk Terjual ($)</div>
+                    <div class="card-body">
+                        <div id="chart3" data-chart-type="line" data-chart-title="Total Pendapatan dari Produk Terjual ($)"></div>
+                        <div>Berdasarkan data penjualan bulanan untuk tahun 2022 dan 2023, terdapat fluktuasi dalam penjualan dengan beberapa bulan menunjukkan peningkatan yang signifikan sementara bulan lain mengalami penurunan. Meskipun terdapat peningkatan penjualan yang cukup besar pada bulan November 2023, secara keseluruhan terjadi penurunan penjualan dari tahun sebelumnya. Adanya pola musiman juga dapat diamati, di mana penjualan cenderung meningkat pada bulan-bulan tertentu</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Jumlah Produk Terjual</div>
+                    <div class="card-body">
+                        <div id="chart4" data-chart-type="line" data-chart-title="Jumlah Produk Terjual"></div>
+                        <div>
+                            Berdasarkan data jumlah produk terjual secara bulanan untuk tahun 2022 dan 2023, terlihat bahwa terjadi fluktuasi dalam jumlah produk yang terjual dari bulan ke bulan. Pada tahun 2022, terdapat variasi dalam jumlah produk terjual, tetapi secara umum tidak ada tren peningkatan atau penurunan yang konsisten. Namun, pada tahun 2023, terjadi perubahan yang lebih signifikan dengan peningkatan jumlah produk terjual pada bulan Februari, Maret, dan November, sementara bulan-bulan lainnya cenderung mengalami penurunan. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="container">
+        <h6 class="text-center">&copy; Created by <b>Wibie Mahardhika Adi - 2100016081</b></h6>
+    </div>
+</body>
+</html>
